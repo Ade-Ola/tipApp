@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="cssFolder/bootstrap.min.css">
+    <link rel="stylesheet" href="cssFolder/tipStyle.css">
+   
+</head>
+<body>
+   
+       <div class="container">
+        <div class="hd fluid">
+           <h4>TIP CALCULATOR</h4>
+            </div>
+           <form>
+              <div class="col-auto grp"> 
+                  <div class="loading">
+                       <h4 class="" for="text">Calculating...</h4> 
+                  </div>  
+                    
+                        <!--  alert message                  -->
+<!--
+                        <div class="alert alert-danger" role="alert">
+                         
+                        </div>
+-->
+                     
+                    <label for="text"  class="lab">How Much Was Your Bill ?</label>
+                  <label class="sr-only" for="inlineFormInputGroup"></label>
+                  <div class="input-group mb-2">
+                        <div class="input-group-prepend ">
+                          <div class="input-group-text icon">$</div>
+                        </div>
+                    <input type="text" class="form-control bill" id="inlineFormInputGroup" placeholder="Username">
+                  </div>
+             </div>
+               <div class="col-auto grp">
+                  <label for="text" class="lab">How Many People Sharing The Bill ?</label>
+                  <label class="sr-only" for="inlineFormInputGroup"></label>
+                  <div class="input-group mb-2">
+                        <div class="input-group-prepend ">
+                          <div class="input-group-text icon"><span><i class="far fa-user"></i></span></div>
+                        </div>
+                    <input type="text" class="form-control people" id="inlineFormInputGroup" placeholder="Username">
+                  </div>
+             </div>
+            
+              <div class="col-auto grp">
+                    <label for="text"  class="lab">How Was Your Service ?</label>
+                     <div class="input-group mb-2 ss">
+                       <select class="custom-select mr-sm-2 optt" id="inlineFormCustomSelect">
+                            <option selected >Choose...</option>
+                            <option class="opt" value="20">Great - 20%</option>
+                            <option class="opt" value="10">Ok - 10%</option>
+                            <option class="opt" value="2">Bad - 2%</option>
+                      </select>
+                     </div>
+             </div>
+             <div class="sub">
+                 <button type="button" class="btn btn-primary calculate">Calculate</button>
+             </div>
+             
+             <!--  loading sign            -->
+             <div class="col-auto grp">
+                   <div class="input-group mb-2 ss">
+                         <div class="spinner-border spins loads" role="status">
+                              <span class="sr-only ">Loading...</span>
+                         </div>
+                  </div>
+             </div>
+             
+             
+              <div class="col-auto grp">
+                   <div class="input-group mb-2 ss">
+                          <div class="result ">
+                              <p class="para">Tip Amount $<span class="tip"></span></p>
+                              <p class="para">Total Amount $<span class="total"></span></p>
+                              <p class="para">Each Person Owns $<span class="each"></span></p>
+                          </div>
+                  </div>
+              </div>
+              
+            
+          </form>
+       </div>
+    
+    
+    <script src="jqFolder/jquery-3.3.1.min.js"></script>
+    <script src="jsFolder/bootstrap.bundle.min.js"></script>
+    <script src="jsFolder/tipJs.js"></script>
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+</body>
+</html>
