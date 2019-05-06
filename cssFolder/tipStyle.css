@@ -4,7 +4,7 @@ body{
     margin-top: 15rem;
 }
 .container{
-    width: 20rem;
+    width: 50rem;
     background-color: white;
     padding-left: 0px;
     padding-right: 0px;
@@ -44,18 +44,23 @@ h4{
     text-align: center;
 }
 .ss{
-    width: 18.7rem;
+    width: 48.7rem;
     text-align: center;
 }
 button{
     margin-top: 1rem;
-    width: 15rem;
+    width: 40rem;
     margin-bottom: 1rem;
 }
+button:hover{
+    background-color:darkcyan !important;
+}
 .result {
+    text-align: center;
     display: block;
-    margin-left: 4rem;
+    margin-left: 17rem;
     margin-bottom: 1rem;
+    font-size: 1.3rem;
     display: none;
 }
 
@@ -74,14 +79,21 @@ button{
 }
 
 .spins{
-   margin-left: 8rem;
+   margin-left: 23rem;
+    margin-top: 1rem;
    margin-bottom: 1rem;
    display: none;
 }
 
 .hide{
-    display: block;
+    display: block !important;
 }
 .far{
     box-sizing: inherit;
+}
+.display-alert{
+    margin-top: 1.4rem;
+   display: none;
+    text-align: center;
+    font-size: 1.4rem;
 }
